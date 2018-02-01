@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="index-search">
+    <input type="search" placeholder='商品搜索：请输入商品关键字'></input>
+    <icon type="search" size="12"></icon>
+  </view>
+  <view class="index-swiper">
+    <swiper indicator-dots="{{swiper['indicator-dots']}}"
+     indicator-color="{{swiper['indicator-color']}}" autoplay="{{swiper.autoplay}}"
+     interval="{{swiper.interval}}" indicator-active-color="{{swiper        ['indicator-active-color']}}"
+    >
+      <block wx:for="{{swiper.imgUrls}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<!-- 楼层一 ：广告位 -->
+<view class="floor advertise">
+  <view class="floor-title">
+    <text>美妆橄榄油</text>
+  </view>
+  <view class="big-board">
+    
+      <image lazy-load="{{true}}"  model="{{'scaleToFill'}}" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+   
+  </view>
+  <view class="board small">
+    
+      <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+   
+  </view>
+  <view class="board">
+    
+      <image src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+   
+  </view>
+</view>
+<!--楼层二  ：热卖产品 -->
+<view class="floor product">
+  <view class="floor-title">
+    <text>热卖产品</text>
+  </view>
+  <view class="product-list">
+    <block wx:for="{{hotProducts}}" wx:key="">
+      <view class="{{item.classname}}">
+        <image src="{{item.imgUrl}}" model="{{'aspectFit'}}"></image>
+        <view class="goods_name">{{item.name}}</view>
+        <view class="goods_price">￥{{item.price}}</view>
+        <view class="goods_integral">消费积分：{{item.integral}}</view>
+      </view>
+          
+      </block>
+  </view>
+</view>
+<!--楼层三 ：广告位 -->
+<view class="floor banner">
+  <navigator url="{{banner.src}}">
+  <image src="{{banner.imgUrl}}" style="width:100%;height:100px;"></image>
+  </navigator>
+</view>
+<!--楼层四 ：推荐商品 -->
+<view class="floor product">
+  <view class="floor-title">
+    <text>推荐产品</text>
+  </view>
+  <view class="product-list">
+    <block wx:for="{{hotProducts}}" wx:key="">
+      <view class="{{item.classname}}">
+        <image src="{{item.imgUrl}}" model="{{'aspectFit'}}"></image>
+        <view class="goods_name">{{item.name}}</view>
+        <view class="goods_price">￥{{item.price}}</view>
+      </view>
+          
+      </block>
+  </view>
+</view>

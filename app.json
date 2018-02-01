@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/product-detail/product-detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "农哒商城",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "selectedColor":"rgb(189,217,11)",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"static/icon_home_default.png",
+        "selectedIconPath":"static/icon_home_default.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "分类",
+        "iconPath": "static/icon_searchcate_default.png",
+        "selectedIconPath": "static/icon_home_default.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "购物车",
+        "iconPath": "static/icon_cart_default.png",
+        "selectedIconPath": "static/icon_home_default.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "用户中心",
+        "iconPath": "static/icon-member_default.png",
+        "selectedIconPath": "static/icon_home_default.png"
+      }
+    ]
+  }
+}
