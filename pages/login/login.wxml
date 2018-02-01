@@ -1,0 +1,25 @@
+<view>
+  <view class="logo_box">
+     <image mode="{{'widthFix'}}" src="/static/login_logo.jpg"></image> 
+  </view>
+ 
+  <view class="input_group">
+    <image style="width:15px;" mode="widthFix" src="/static/icon_phone.jpg"></image>
+    <input type="text" placeholder="请输入手机号" />
+  </view>
+  <view class="input_group">
+    <image style="width:15px;" mode="widthFix" src="/static/icon_pwd.jpg"></image>
+    <input type="text" password="{{true}}" placeholder="请输入密码" />
+  </view>
+  <view class="btn-area">
+    <button bindtap="loginHandel">登录</button>
+  </view>
+  <view class="login_opt">
+    <navigator url="">
+      <text class="forget_pwd">忘记密码</text>
+    </navigator>    
+    <navigator url="">
+      <text class="go_register">注册账号</text>
+    </navigator>
+  </view>
+</view>

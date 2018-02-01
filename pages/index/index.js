@@ -61,6 +61,6 @@ Page({
   },
   //页面渲染后执行
   onLoad:function(){
-    wx.showTabBar()
+    
   }
 })

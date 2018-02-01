@@ -1,0 +1,51 @@
+/* 登录页面样式 */
+.logo_box{
+  width:140px;
+  margin:40px auto;
+}
+.logo_box image{
+  width:100%;
+  margin:0 auto;
+  display:block;
+}
+.input_group{
+  width:90%;
+  margin:10px auto;
+  border:1px solid rgb(190,190,190);
+  border-radius: 5px;
+  display:flex;
+  padding:5px 10px;
+  box-sizing:border-box;
+}
+.input_group image{
+  margin-top:5px;
+}
+.input_group input{
+  flex-grow:1;
+  margin-left:10px;
+  line-height:45px;
+  height:25px;
+  
+}
+.btn-area{
+  width:90%;
+  margin:40px auto 0;
+}
+.btn-area button{
+  background:#bdd90a;
+  color:#fff;
+  font-size:16px;
+}
+.login_opt{
+  margin:10px auto;
+  color:#909090;
+  font-size:12px;
+  width:90%;
+  overflow: hidden;
+}
+.login_opt .forget_pwd{
+  float:left;
+}
+.login_opt .go_register{
+  float:right;
+}
