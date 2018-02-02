@@ -1,16 +1,18 @@
 {
   "pages":[
-    "pages/login/login",
-    "pages/index/index",
     "pages/product-detail/product-detail",
+    "pages/index/index",
+    
     "pages/product-search/product-search",
     "pages/shopping-cart/shopping-cart",
     "pages/member-center/member-center",
-    
+    "pages/login/login",
     "pages/logs/logs"
   ],
   "window":{
+    "navigationStyle":"default",
     "backgroundTextStyle":"light",
+    "backgroundColor":"#F0EFF4",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "农哒商城",
     "navigationBarTextStyle":"black"

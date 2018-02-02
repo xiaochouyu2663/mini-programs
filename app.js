@@ -9,6 +9,7 @@ App({
     
   },
   globalData: {
+    URL:'http://www.demo.com/index.php/api/',
     userInfo:{
       isLogin:false
     }

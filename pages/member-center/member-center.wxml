@@ -1,2 +1,73 @@
-<!--pages/member-center/member-center.wxml-->
-<text>pages/member-center/member-center.wxml</text>
+<!--个人中心  -->
+<view class="user_head">
+  <image mode="scaleToFill" class="user_head-bg" src="../../static/user-bg.png"></image>
+  <view class="userInfo">
+    <image mode="aspectFit" class="user_logo" src="{{userInfo.headImg}}"></image>
+    <view class="user_msg">
+      <view>
+        <text class="user_name">小明小明小明小明</text><text class="user_level">VIP会员</text>
+      </view>
+      <view class="is_ws">申请开通微商</view>
+    </view>
+    <view class="user_referee">
+      <image style="width:30px;height:30px;display:block;margin:5px auto;" src="/static/qrcode.png"></image>
+      <text>推荐码</text>
+    </view>
+  </view>
+  <view class="integralInfo">
+    <navigator>
+      <view>54643.00</view>
+      <text>消费积分</text>
+    </navigator>
+    <navigator>
+      <view>54643.00</view>
+      <text>提现积分</text>
+    </navigator>
+  </view>
+</view>
+<view class="order_box">
+  <view class="order_top">
+    <navigator class="order_top-main">
+      <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon_orders.png"></image>
+      <text>我的订单</text>
+      <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
+      <text style="float:right;margin-right:4vw;color:#999">查看我的全部订单</text>
+    </navigator>
+  </view>
+  <view class="order_list">
+    <navigator wx:for="{{orderList}}" wx:key>
+      <view wx:if="{{item.num}}" class="badge">{{item.num}}</view>
+      <image mode="widthFix" src="{{item.icon}}"></image>
+      <text>{{item.name}}</text>  
+    </navigator>
+  </view>
+</view>
+<view class="list_block">
+  <navigator class="order_top-main">
+      <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon01.jpg"></image>
+      <text>我的积分</text>
+      <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
+    </navigator>
+    <navigator class="order_top-main">
+      <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon02.jpg"></image>
+      <text>我的合作伙伴</text>
+      <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
+    </navigator>
+    <navigator class="order_top-main">
+      <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon03.jpg"></image>
+      <text>账户管理</text>
+      <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
+    </navigator>
+    <navigator class="order_top-main">
+      <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon04.jpg"></image>
+      <text>关于我们</text>
+      <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
+    </navigator>
+</view>
+<view class="list_block">
+  <navigator class="order_top-main">
+      <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon07.jpg"></image>
+      <text>退出</text>
+      <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
+    </navigator>
+</view>

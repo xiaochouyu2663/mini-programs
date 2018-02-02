@@ -1,3 +1,83 @@
-<view>
-  商品详情页面
+<!--商品详情  -->
+<view class="slide">
+  <image mode="widthFix" src="{{productInfo.imgUrl}}" class="product_img"></image>
+</view>
+<view class="product_info">
+  <view class="product_name">
+    {{productInfo.name}}
+  </view>
+  <view class="about_money">
+    <text style="margin-right:2vw;">￥{{productInfo.price}}</text>
+    <text>消费积分：{{productInfo.integral}}</text>
+  </view>
+  <view class="item_content">
+    <text style="margin-right:10vw;">销量：{{productInfo.sales}}</text>
+    <text>运费：￥{{productInfo.yeright}}</text>
+  </view>
+</view>
+<view class="product_serve">
+  <view>
+    上门自提
+  </view>
+  <view>
+    售后保障
+  </view>
+</view>
+<view class="product_tab">
+  <view bindtap='selectDetail' class="{{productTab.select?'active':''}}">商品详情</view>
+  <view bindtap='selectEvaluate' class="{{productTab.select?'':'active'}} evaluate">
+    商品评价
+    <span>2</span>
+  </view>
+  <view class="nav_bottom" style="left:{{productTab.x}}"></view>
+</view>
+<view class="product_item">
+  <view wx:if="{{productTab.select}}" style="min-height:200px;">
+    商品详情商品详情商品详情
+  </view>
+  <view wx:else class="evalute_content">
+    <view class="evalute_content-top">
+      <view >
+        <span style="float:left;">商品评价（3）</span>
+        <span style="float:right;">好评率96%</span>
+      </view>
+      <view class="evaluate_type" style="">
+        <view class="active">全部(3)</view>
+        <view>好评(3)</view>
+        <view>中评(3)</view>
+        <view>差评(3)</view>
+        <view>晒图(3)</view>
+      </view>
+    </view>
+    <view class="evalute_content-main">
+      <view class="evalute_item" wx:for="{{evaluate}}">
+        <view class="evalute_user">
+          <text>{{item.username}}</text>
+          <view class="evalute_level">
+            <image mode="widthFix" src="/static/icon_like.png"></image>
+            <image mode="widthFix" src="/static/icon_likeed.png"></image>
+            <image mode="widthFix" src="/static/icon_likeed.png"></image>
+            <image mode="widthFix" src="/static/icon_likeed.png"></image>
+            <image mode="widthFix" src="/static/icon_likeed.png"></image>
+          </view>
+        </view>
+        <view class="evalute_txt">{{item.content}}</view>
+        <view wx:if="{{item.imgUrl}}" class="evalute_img">
+          <image  src="{{item.imgUrl}}"></image>
+        </view>
+        <view class="evalute_time">{{item.time}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="shop_opt">
+  <view style="float:left;text-align:center;">
+    <image style="display:block;width:8vw;height:8vw;margin:0 auto;" src="/static/icon_car.png"></image>
+    <text>购物车</text>
+  </view>
+  <view style="float:right;">
+    <button plain class="addCart" size="mini">加入购物车</button>
+    <button class="buy" size="mini">立即购买</button>
+  </view>
+  
 </view>
