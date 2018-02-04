@@ -1,4 +1,4 @@
-// pages/shopping-cart/shopping-cart.js
+// pages/settlemenmt/settlemenmt.js
 Page({
 
   /**
@@ -7,48 +7,54 @@ Page({
   data: {
     goods:[
       {
-        name:'洁面凝胶1',
-        price:'2342.00',
-        integral:'234.00',
-        num:3,
-        imgUrl:'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
+        id: 1231,
+        name: 'Huile Olive 食用橄榄油',
+        price: '92342.00',
+        original: '923422.00',
+        integral: '2323.00',
+        RMB: '23',
+        sales: 1231313,
+        yeright: '1.00',
+        num: 2,
+        imgUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
       },
       {
-        name: '洁面凝胶2',
-        price: '2.00',
-        integral: '234.00',
-        num: 1,
+        id: 1231,
+        name: 'Huile Olive 食用橄榄油',
+        price: '92342.00',
+        original: '923422.00',
+        integral: '2323.00',
+        RMB: '23',
+        sales: 1231313,
+        yeright: '1.00',
+        num: 2,
         imgUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
       }
-    ],
-    editState:0,
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.hideTabBar()
     wx.setNavigationBarTitle({
-      title:'购物车'
+      title: '结算'
     })
     wx.setNavigationBarColor({
-      frontColor:'#ffffff',
-      backgroundColor:'#bdd90a'
+      frontColor: '#ffffff',
+      backgroundColor: '#BDD90B',
+      animation: {
+        duration: 400,
+        timingFunc: 'easeIn'
+      }
     })
-    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    wx.getSystemInfo({
-      success: function (res) {
-        console.log(res)
-      }
-    })
-    
+  
   },
 
   /**
@@ -91,11 +97,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  //购物车编辑
-  editHandle: function () {
-    this.setData({
-      editState: !this.data.editState
-    })
   }
 })

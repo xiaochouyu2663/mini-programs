@@ -9,6 +9,7 @@ Page({
       id:1231,
       name: 'Huile Olive 食用橄榄油',
       price:'92342.00',
+      original:'923422.00',
       integral:'2323.00',
       RMB:'23',
       sales:1231313,
@@ -43,7 +44,10 @@ Page({
         imgUrl: null,
         time: '2018-1-2 12:33'
       }
-    ]
+    ],
+    attrPopup:{
+      visible:false
+    }
   },
 
   /**
@@ -117,5 +121,19 @@ Page({
       'productTab.tip': '商品评价',
       'productTab.x': '50%'
     })
+  },
+  //attr-popup弹出效果
+  popupShow:function(){
+    this.setData({
+      'attrPopup.visible':true
+    })
+  },
+  popupHide: function (e) {
+    //判断事件源组件
+    if (e.target.id == 'attr-popup' || e.target.id =='attr-popup-close'){
+      this.setData({
+        'attrPopup.visible': false
+      })
+    }
   }
 })

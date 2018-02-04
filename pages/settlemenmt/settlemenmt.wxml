@@ -1,0 +1,69 @@
+<!--结算页面  -->
+<view class="step1">
+  <image class="step1-left" src="/static/icon_adress.png">
+  </image>
+  <navigator class="step1-m">
+    <view>小明，13121554242</view>
+    <view>天津天津市南开区王顶堤街道天津市南开区天拖南</view>
+  </navigator>
+  <image class="step1-right" src="/static/icon_viewdetial.png"></image>
+  <image class="step1-bottom" src="/static/s1_border.png"></image>
+</view>
+<view class="step2">
+  <view class="step2-title">
+    <text>已购商品</text>
+    <navigator>
+      <image src="/static/icon_edit.png"></image>
+    </navigator>
+  </view>
+  <view class="list">
+    <view class="list-item" wx:for="{{goods}}" wx:key="{{index}}">
+      <image src="{{item.imgUrl}}"></image> 
+      <view>{{item.name}}</view>
+      <view class="item-main">
+        <view>￥{{item.price}}</view>
+        <view>消费积分：{{item.integral}}</view>
+        <view>x{{item.num}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="step3">
+  <text>买家留言</text>
+  <input placeholder='选填'></input>
+</view>
+<view class="step4">
+  <view style="overflow:hidden;">
+    <view class="step4-left">支付配送</view>
+    <view class="step4-right">
+      线上支付
+      <image src="/static/icon_viewdetial.png"></image>
+    </view>
+  </view>
+  <view class="step4-m">
+    平台合作快递
+  </view>
+</view>
+<view class="step5">
+  <view>
+    <text>商品金额</text>
+    <text>￥2342</text>
+  </view>
+  <view>
+    <text>消费积分</text>
+    <text>￥2342</text>
+  </view>
+  <view>
+    <text>运费</text>
+    <text>￥2342</text>
+  </view>
+</view>
+<view class="end">
+  <view class="pull-left">
+    <view>订单实付：<text> 2323</text></view>
+    <view>消费积分：<text>23432</text></view>
+  </view>
+  <view class="push-right">
+    <button size="mini">提交订单</button>
+  </view>
+</view>

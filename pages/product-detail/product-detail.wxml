@@ -50,7 +50,7 @@
       </view>
     </view>
     <view class="evalute_content-main">
-      <view class="evalute_item" wx:for="{{evaluate}}">
+      <view class="evalute_item" wx:for="{{evaluate}}" wx:key="{{index}}">
         <view class="evalute_user">
           <text>{{item.username}}</text>
           <view class="evalute_level">
@@ -76,8 +76,34 @@
     <text>购物车</text>
   </view>
   <view style="float:right;">
-    <button plain class="addCart" size="mini">加入购物车</button>
+    <button bindtap='popupShow' plain class="addCart" size="mini">加入购物车</button>
     <button class="buy" size="mini">立即购买</button>
   </view>
   
+</view>
+<view id="attr-popup" catch:tap='popupHide' class="attr-popup {{attrPopup.visible?'is-active':''}}">
+  <view id="attr-popup-container" class="attr-popup-container">
+    <view class="attr-popup-header">
+      <image class="thumb" src="{{productInfo.imgUrl}}"></image>
+      <view class="info">
+        <view><text class="discount">￥{{productInfo.price}}</text>
+        <text class="original">￥{{productInfo.original}}</text></view>
+        <view>消费积分：{{productInfo.integral}}</view>
+      </view>
+      <image id="attr-popup-close" class="attr-popup-close" src="/static/close.png"></image>
+    </view>
+    <view class="attr-popup-body">
+      <text>数量</text>
+      <view class="goods-num">
+        <view class="minus">-</view>
+        <view>
+          <input type="number" value="1" class="buy-num"></input>
+        </view>
+        <view class="add">+</view>
+      </view>
+    </view>
+    <view class="attr-popup-footer">
+      <button>确 定</button>
+    </view>
+  </view>
 </view>

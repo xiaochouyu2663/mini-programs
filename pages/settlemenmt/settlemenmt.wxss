@@ -1,0 +1,163 @@
+/*结算  */
+.step1{
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4.68vw 12vw 4.68vw 15.625vw;
+}
+.step1 .step1-left{
+  position: absolute;
+  top: 50%;
+  left: 3vw;
+  transform: translateY(-50%);
+  width: 5vw;
+  height: 6.25vw;
+}
+.step1 .step1-right{
+  position: absolute;
+  top: 50%;
+  right: 3vw;
+  transform: translateY(-50%);
+  width: 1.8vw;
+  height: 3.4vw;  
+}
+.step1 .step1-m{
+  font-size: 3.75vw;
+  line-height: 6vw;
+}
+.step1-bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.25vw;
+}
+.step2 .step2-title {
+  padding: 2.18vw 4.69vw;
+  font-size: 3.75vw;
+  overflow: hidden;
+}
+.step2-title text{
+  float: left;
+}
+.step2-title image{
+  width: 5vw;
+  height: 6.25vw;
+  float: right;
+}
+.step2 .list{
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 4.68vw;
+  background: #f9f9f9;
+}
+.step2 .list .list-item{
+  position: relative;
+  padding: 3.12vw 32.8vw 3.12vw 19.6vw;
+  width: 100%;
+  font-size: 3.75vw;
+  border-bottom: 1px solid #ebebeb;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 21.8vw;
+  box-sizing: border-box;
+}
+.step2 .list .list-item:last-child {
+  border-bottom: none;
+}
+.list-item>image{
+  display: block;
+  position: absolute;
+  left: 0; 
+  width: 15.6vw;
+  height: 15.6vw;
+}
+.list-item .item-main {
+  position: absolute;
+  top: 3.12vw;
+  right: 2.18vw;
+  text-align: right;
+  
+}
+.list-item .item-main view {
+  color: #bdd90a;
+  font-size: 3.75vw;
+}
+.step3 {
+  display: flex;
+  padding: 2.18vw 4.69vw;
+  font-size: 3.75vw;
+  overflow: hidden;
+  border-bottom: 1px solid #e7e5ea;
+  border-top: 1px solid #e7e5ea;
+  color: rgb(51,51,51);
+  line-height: 7vw;
+}
+.step3 input{
+  display: inline-block;
+  /* border:1px solid; */
+  flex-grow: 1;
+  margin-left: 3vw;
+}
+.step4 {
+  padding: 2.18vw 4.69vw;
+  overflow: hidden;
+}
+.step4 .step4-left {
+  float: left;
+}
+.step4 .step4-right {
+  float: right;
+}
+.step4 .step4-right image {
+  width: 1.8vw;
+  height: 3.4vw;  
+}
+.step4 .step4-m {
+  clear: both;
+  overflow: hidden;
+  text-align: right;
+  margin-top: 2.18vw;
+}
+.step5 {
+  padding: 2.18vw 4.69vw;
+  border-top: 1px solid #e7e5ea;
+  border-bottom: 1px solid #e7e5ea;
+  color: #da4453;
+  line-height: 7vw;
+}
+.step5 view text:last-child{
+  float: right;
+}
+.end{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  padding: 2.18vw 4.68vw;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  background: rgba(255,255,255,.95);
+  border-top: 1px solid #e7e5ea;
+}
+.end .pull-left{
+  float: left;
+  line-height: 6.25vw;
+}
+.end .pull-left text{
+  color: #bdd90a;
+}
+.end .push-right {
+  float: right;
+}
+.end .push-right button {
+  color: #fff;
+  width: 25vw;
+  height: 12.5vw;
+  background: #bdd90a;
+  text-align: center;
+  line-height: 12.5vw;
+  border-radius: 1.25vw;
+  padding: 0;
+}

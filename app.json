@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/product-detail/product-detail",
+    "pages/settlemenmt/settlemenmt",
     "pages/index/index",
-    
+    "pages/product-detail/product-detail",
     "pages/product-search/product-search",
     "pages/shopping-cart/shopping-cart",
     "pages/member-center/member-center",
@@ -18,7 +18,8 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar":{
-    "selectedColor":"rgb(189,217,11)",
+    "color": "#aaa",
+    "selectedColor":"#bdd90a",
     "list": [
       {
         "pagePath": "pages/index/index",

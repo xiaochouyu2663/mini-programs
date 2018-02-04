@@ -1,2 +1,42 @@
-<!--pages/shopping-cart/shopping-cart.wxml-->
-<text>pages/shopping-cart/shopping-cart.wxml</text>
+<!--购物车  -->
+<view class="shopcar-header">
+  <text class="title">农哒商城</text>
+  <text bind:tap="editHandle" wx:if="{{!editState}}" class="opt">编辑</text>
+  <text bind:tap="editHandle" wx:else class="opt">完成</text>
+</view>
+<view class="shopcar-body">
+  <view class="goods-item" wx:for="{{goods}}" wx:key="{{index}}">
+    <view class="pull-left">
+      <checkbox color="#ff0000" value="s" checked="{{true}}"/>
+    </view>
+    <view class="item-info">
+      <navigator class="goods-thumb">
+        <image src="{{item.imgUrl}}"></image>
+      </navigator>
+      <view wx:if="{{!editState}}" class="goods-name">{{item.name}}</view>
+      <view wx:else class="goods-name">
+        <view class="goods-num">
+        <view class="minus">-</view>
+        <view>
+          <input type="number" value="1" class="buy-num"></input>
+        </view>
+        <view class="add">+</view>
+      </view>
+      </view>
+      <view class="goods-price">￥{{item.price}}</view>
+      <view class="goods-integral">消费积分：{{item.integral}}</view>
+      <view wx:if="{{!editState}}" class="goods-quie">x{{item.num}}</view>
+      <image wx:else style="width:4vw;height:4vw;" class="goods-quie" src="/static/icon_trash.png"></image>
+    </view>
+  </view>
+</view>
+<view class="shopcar-footer">
+  <view class="pull-left">
+      <checkbox color="#ff0000" value="s" checked="{{true}}"/>全选
+    </view>
+    <view class="good-amount">
+      <view class="amout-price">总价：{{'234234'}}</view>
+      <view>总价：{{'234234'}}</view>
+    </view>
+    <button size="mini">结算</button>
+</view>

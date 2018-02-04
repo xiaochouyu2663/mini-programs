@@ -1,4 +1,8 @@
 /* 商品详情 */
+page{
+  width:100%;
+  height:100%;
+}
 .slide{
   width:100%;
   border-bottom:1px solid #ccc;
@@ -82,7 +86,7 @@
 .product_item>view{
   font-size:4vw;
 }
-.product_tab>view.evaluate>span{
+.product_tab>view.evaluate span{
   position: absolute;
   background:#f74c31;
   color:#fff;
@@ -173,4 +177,118 @@
   border: 1px solid #bdd90a;
   color:#fff;
   padding:1vw 3vw;
+}
+.attr-popup{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.3s ease,visibility 0s;
+}
+.attr-popup.is-active{
+  opacity:1;
+  visibility:visible;
+  transition: opacity .3s ease,visibility 0s;
+}
+.attr-popup-container{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  min-height:100px;
+  background:#fff;
+  box-shadow: 0 0 20px rgba(0,0,0,.4);
+  transform: translateY(110%);
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.is-active .attr-popup-container{
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.attr-popup-header{
+  position: relative;
+  border-top:1px solid rgb(229,229,229);
+  padding-left:24vw;
+  
+}
+.attr-popup-header .thumb{
+  position:absolute;
+  top:-4vw;
+  left:4vw;
+  width:16vw;
+  height:16vw;
+  padding: 4px;
+  margin-right: 4vw;
+  background-color: rgb(255,255,255);
+  border: 1px solid rgb(221,221,221);
+  border-radius: 1vw;
+}
+.attr-popup-header .info text,.attr-popup-header .info view{
+  color:#bdd90a;
+  margin-top:1vw;
+}
+.attr-popup-header .info text.discount{
+  margin-right:3vw;
+  font-size:4.6vw;
+}
+.attr-popup-header .info text.original{
+  color:#aaa;
+  text-decoration: line-through;
+}
+.attr-popup-close{
+  position:absolute;
+  right:4vw;
+  top:3vw;
+  width:6vw;
+  height:6vw;
+}
+.attr-popup-body{
+  padding:0 4vw;
+  margin-top:8vw;
+}
+.attr-popup-body{
+  margin-top:4vw;
+}
+.goods-num{
+  margin:2vw 0 2vw;
+  overflow: hidden;
+}
+.goods-num view{
+  float:left;
+}
+.goods-num view.add,.goods-num view.minus{
+  border:1px solid #d7d7d7;
+  font-size:5.6vw;
+  width:8vw;
+  height:8vw;
+  line-height: 8vw;
+  text-align: center;
+}
+.goods-num view.add{
+  border-radius: 0 2px 2px 0;
+}
+.goods-num view.minus{
+  border-radius: 2px 0  0 2px;
+}
+.goods-num .buy-num{
+  width:7vw;
+  border:1px solid  #d7d7d7;
+  border-width:1px 0 1px 0;
+  line-height:8vw;
+  height:8vw;
+  color:#ff5722;
+  text-align: center; 
+}
+.attr-popup-footer button{
+  background:#bdd90a;
+  color:#fff;
+  height:12vw;
+  border-radius: 0;
+  line-height: 12vw;
 }
