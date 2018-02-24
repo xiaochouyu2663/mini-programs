@@ -1,0 +1,58 @@
+/* 我的合作伙伴--样式 */
+page {
+  background: #e8e8e8;
+  -webkit-tap-highlight-color: #fff;
+}
+.tabbar {
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 0 2.7777vw;
+  box-sizing: border-box;
+  background: #fff;
+  line-height: 13.888vw;
+}
+.tabbar-item {
+  width: 50%;
+  text-align: center;
+  font-size: 3.8888vw;
+  color: #676767;
+  cursor: pointer;
+  background: #fff;
+}
+.tabbar-item.current {
+  color: #bdd90b;
+}
+.tabbar-pagination {
+  position: absolute;
+  bottom: 0;
+  width: 50% ;
+  height: 2px;
+  background: #bdd90b;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.partner-list {
+  margin-top: 1.85vw;
+}
+.partner-list_item {
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 0.925vw;
+  background: #fff;
+  padding: 1.85vw 2.7777vw;
+  font-size: 3.33vw;
+}
+.partner-list_item image {
+  display: block;
+  width: 15.74vw;
+  height: 15.74vw;
+  border-radius: 50%;
+  margin-right: 3.7vw;
+}
+.partner-list_item>view {
+  margin-top: 2.4vw;
+}
+.partner-list_item>view>view {
+  line-height: 5.8vw;
+}

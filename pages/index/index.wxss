@@ -1,4 +1,20 @@
 /**index.wxss**/
+.customer-header {
+  display: none;
+  position: relative;
+  padding: 8vw 5vw 0;
+  line-height: 10vw;
+  height: 10vw;
+  background: #f00;
+  color: #fff;
+  text-align: center;
+}
+.header-back {
+  position: absolute;
+  left: 2%;
+  width: 5vw;
+  color: #fff;
+}
 .index-search{
   width:96%;
   margin:5px auto;

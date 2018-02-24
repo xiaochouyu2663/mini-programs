@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#bdd90b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的合作伙伴",
+  "backgroundColor": "#e8e8e8",
+  "backgroundTextStyle": "dark",
+  "navigationStyle": "default",
+  "enablePullDownRefresh": true
+}

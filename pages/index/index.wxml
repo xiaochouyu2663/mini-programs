@@ -1,4 +1,8 @@
 <!--index.wxml-->
+<view class="customer-header">
+  <view class="header-back">back</view>
+  <view class="header-title">农哒商城</view>
+</view>
 <view class="container">
   <view class="index-search">
     <input type="search" placeholder='商品搜索：请输入商品关键字'></input>

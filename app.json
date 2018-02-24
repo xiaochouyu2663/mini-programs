@@ -1,25 +1,30 @@
 {
   "pages":[
-    "pages/settlemenmt/settlemenmt",
+    "pages/member-center/mypartner",
     "pages/index/index",
+    "pages/settlemenmt/settlemenmt",
     "pages/product-detail/product-detail",
     "pages/product-search/product-search",
     "pages/shopping-cart/shopping-cart",
     "pages/member-center/member-center",
+    
     "pages/login/login",
     "pages/logs/logs"
   ],
   "window":{
-    "navigationStyle":"default",
-    "backgroundTextStyle":"light",
-    "backgroundColor":"#F0EFF4",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "农哒商城",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "white",
+    "navigationStyle":"default",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle":"dark",
+    "backgroundColor":"#F0EFF4"
+    
   },
   "tabBar":{
     "color": "#aaa",
     "selectedColor":"#bdd90a",
+    "backgroundColor":"#fff",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -46,5 +51,6 @@
         "selectedIconPath": "static/icon_member-active.png"
       }
     ]
-  }
+  },
+  "debug": false
 }

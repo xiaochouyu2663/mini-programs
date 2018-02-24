@@ -62,5 +62,10 @@ Page({
   //页面渲染后执行
   onLoad:function(){
     
+  },
+  onPullDownRefresh: function(){
+    setTimeout(()=>{
+      wx.stopPullDownRefresh()
+    },3000)
   }
 })

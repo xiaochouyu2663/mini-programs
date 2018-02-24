@@ -1,0 +1,16 @@
+<!--我的合作伙伴-->
+<view class="tabbar">
+  <view bindtap='tipTab' class="{{tab.current?'tabbar-item current':'tabbar-item'}}">一阶伙伴</view>
+  <view bindtap='tipTab' class="{{!tab.current?'tabbar-item current':'tabbar-item'}}">二阶伙伴</view>
+  <view style="left:{{tab.pagination+'%'}}" class="tabbar-pagination"></view>
+</view>
+<view class="partner-list">
+  <view class="partner-list_item" wx:for="{{partnerList}}" wx:key="index">
+    <image src="{{item.imgUrl?'http://noda.cn/static/uploadImg/headImg/'+item.imgUrl:'/static/user_img.jpg'}}"></image>
+    <view>
+      <view>{{item.level+'：'+item.mobile}}</view>
+      <view>注册时间：{{item.addTime}}</view>
+    </view>
+  </view>
+</view>
+<view></view>
