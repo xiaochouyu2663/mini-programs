@@ -1,0 +1,35 @@
+/* pages/bank-info/bank-info.wxss */
+.input-group {
+  display: -webkit-flex;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #cccccc;
+  line-height: 10.185vw;
+  padding: 0 2.77777vw;
+}
+.input-group:last-child {
+  border-bottom: none;
+}
+.input-group label {
+  width: 18vw;
+}
+.input-group input {
+  line-height: 10.185vw;
+  height: 10.185vw;
+  padding-left: 5px;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+picker-view {
+  position:absolute;
+  z-index: 9;
+  flex: 1;
+  outline: 1px solid ;
+  width: 40vw;
+  height: 100px;
+  text-align:center; 
+  color:red;
+}
+.bank-info {
+  margin-top: 1.08vw;
+}

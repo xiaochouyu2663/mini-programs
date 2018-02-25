@@ -1,0 +1,20 @@
+/* 支付方式 */
+.input-group {
+  display: -webkit-flex;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #cccccc;
+  line-height: 10.185vw;
+  padding: 0 2.77777vw;
+}
+.input-group input {
+  line-height: 10.185vw;
+  height: 10.185vw;
+  padding-left: 5px;
+}
+.input-group:last-child {
+  border-bottom: none;
+}
+.prod-info,.payment {
+  margin-top: 1.08vw;
+}

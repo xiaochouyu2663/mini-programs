@@ -1,0 +1,31 @@
+<!--支付方式-->
+<view class="order-info">
+  <view class="input-group">
+    <label for="orderId">订单编号：</label>
+    <input id="orderId" value="21213131454531" disabled></input>
+  </view>
+  <view class="input-group">
+    <label for="orderTime">下单时间：</label>
+    <input id="orderTime" style="color:#b3b3b3" value="2017-08-25 18:21:41" disabled></input>
+  </view>
+</view>
+<view class="prod-info">
+  <view class="input-group">
+    <label for="orderId">支付金额：</label>
+    <input id="orderId" style="color:#bdd90b" value="￥123.33" disabled></input>
+  </view>
+  <view class="input-group">
+    <label for="orderTime">产品信息：</label>
+    <input id="orderTime" style="color:#b3b3b3" value="2017-08-25 18:21:41" disabled></input>
+  </view>
+</view>
+<view class="payment">
+  <radio-group bindchange="radioChange">
+    <view class="input-group">
+      <radio value="0" color="#bdd90b" checked/>微信支付
+    </view>
+    <view class="input-group">
+      <radio value="1" color="#bdd90b"/>支付宝支付
+    </view>
+  </radio-group> 
+</view>

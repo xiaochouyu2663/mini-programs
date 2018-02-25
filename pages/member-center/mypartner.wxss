@@ -1,8 +1,4 @@
 /* 我的合作伙伴--样式 */
-page {
-  background: #e8e8e8;
-  -webkit-tap-highlight-color: #fff;
-}
 .tabbar {
   display: -webkit-flex;
   display: flex;
@@ -32,6 +28,10 @@ page {
   background: #bdd90b;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+scroll-view {
+  /* height:400px;  */
+  outline: 1px solid;
+}
 .partner-list {
   margin-top: 1.85vw;
 }
@@ -55,4 +55,8 @@ page {
 }
 .partner-list_item>view>view {
   line-height: 5.8vw;
+}
+.load-word {
+  text-align: center;
+  line-height:6vw;
 }

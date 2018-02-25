@@ -5,5 +5,7 @@
   "backgroundColor": "#e8e8e8",
   "backgroundTextStyle": "dark",
   "navigationStyle": "default",
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "disableScroll":false,
+  "onReachBottomDistance":50
 }

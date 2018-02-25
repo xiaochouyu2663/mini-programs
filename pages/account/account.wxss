@@ -1,0 +1,15 @@
+/* 账户管理 */
+navigator {
+  background: #fff;
+  padding: 0 2.7777vw;
+  border-bottom: 1px solid #ccc;
+  line-height: 10.185vw; 
+  height: 10.185vw; 
+}
+navigator:last-child{
+  border-bottom: none;
+}
+navigator image {
+  width: 5vw;
+  vertical-align: sub;
+}

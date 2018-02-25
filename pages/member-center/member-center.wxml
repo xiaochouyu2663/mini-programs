@@ -53,7 +53,7 @@
       <text>我的合作伙伴</text>
       <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
     </navigator>
-    <navigator class="order_top-main">
+    <navigator url="/pages/account/account" class="order_top-main" hover-class="none">
       <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon03.jpg"></image>
       <text>账户管理</text>
       <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>

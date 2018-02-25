@@ -12,8 +12,9 @@ Page({
     },
     partnerList: [
     ],
+    hasData:true,
     nowPage:1,
-    pageCount:13
+    pageCount:10
   },
 
   /**
@@ -93,14 +94,58 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    console.log('Do something when pull down.');
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+    var that = this;
+    if(that.data.hasData==true){
+      that.setData({
+        nowPage: that.data.nowPage + 1
+      })
+      wx.request({
+        url: app.globalData.URL + '/partner/partnerFirst',
+        data: {
+          nowPage: that.data.nowPage,
+          pageCount: that.data.pageCount
+        },
+        dataType: 'json',
+        success: function (res) {
+          if (res.data.code == 200) {
+            that.setData({
+              partnerList: that.data.partnerList.concat(res.data.data.map((item) => {
+                switch (item.level) {
+                  case 0:
+                    var leveldes = '初级会员'
+                    break;
+                  case 1:
+                    var leveldes = '一级微商'
+                    break;
+                  case 2:
+                    var leveldes = '二级微商'
+                    break;
+                  default:
+                    break;
+                }
+                return {
+                  level: leveldes,
+                  mobile: item.mobile,
+                  addTime: item.addTime,
+                  imgUrl: ''
+                }
+              }))
+            })
+          }else{
+            that.setData({
+              hasData:false
+            })
+          }
+        }
+      })
+    }
   },
 
   /**
