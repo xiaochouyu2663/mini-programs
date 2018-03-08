@@ -1,16 +1,20 @@
 {
   "pages":[
-    "pages/bank-info/bank-info",
+    "pages/integral/my-integral",
     "pages/index/index",
     "pages/settlemenmt/settlemenmt",
     "pages/product-detail/product-detail",
     "pages/product-search/product-search",
     "pages/shopping-cart/shopping-cart",
+    
     "pages/member-center/member-center",
     "pages/member-center/mypartner",
     "pages/payment/payment",
     "pages/account/account",
-    
+    "pages/pwd-manage/pwd-manage",
+    "pages/add-address/add-address",
+    "pages/business-open/business-open",
+    "pages/bank-info/bank-info",
     "pages/login/login"
   ],
   "window":{

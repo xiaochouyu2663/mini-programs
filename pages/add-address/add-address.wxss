@@ -1,0 +1,16 @@
+/* pages/add-address/add-address.wxss */
+.wx-switch-input{
+  display:block;
+  width:70rpx !important;
+  height:40rpx !important;
+}
+/*白色样式（false的样式）*/
+.wx-switch-input::before{
+  width:66rpx !important;
+  height: 38rpx !important;
+}
+/*绿色样式（true的样式）*/
+.wx-switch-input::after{
+  width: 40rpx !important;
+  height: 36rpx !important;
+}

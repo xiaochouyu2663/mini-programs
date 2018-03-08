@@ -1,22 +1,18 @@
-// pages/bank-info/bank-info.js
+// pages/pwd-manage/pwd-manage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    province:[
-      '河北省','天津','北京'
-    ],
-    showProvince: false,
-    currentPro:''
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+  
   },
 
   /**
@@ -66,18 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  bindChange: function (e) {
-    const val = e.detail.value
-    this.setData({
-      currentPro: this.data.province[val[0]]
-    })
-    
-  },
-  showProvince:function(){
-    this.setData({
-      showProvince: !this.data.showProvince,
-      currentPro: this.data.currentPro
-    })
   }
 })

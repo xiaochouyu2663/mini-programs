@@ -1,10 +1,10 @@
 <!--账户管理-->
 <view>
-    <navigator hover-class="none">
+    <navigator url="/pages/pwd-manage/address" hover-class="none">
       <image mode="widthFix" src="/static/icon_address.jpg"></image>
       地址管理
     </navigator>
-  <navigator hover-class="none">
+  <navigator url="/pages/pwd-manage/pwd-manage" hover-class="none">
       <image mode="widthFix" src="/static/icon_pswd.jpg"></image>
       密码管理
   </navigator>

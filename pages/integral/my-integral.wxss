@@ -1,0 +1,74 @@
+/* 我的积分 */
+.integral-box {
+  width: 91.77777%;
+  margin: 4.166666vw auto;
+}
+.integral-box_top {
+  position: relative;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+.integral-box_top .nav-item {
+  float:left;
+  width: 50%;
+  text-align: center;
+  line-height: 15.2777777vw;
+  font-size: 4.259vw;
+  color:#010101;
+}
+.integral-box_top .nav-pagination {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  height: 2px;
+  background: #bdd90b;
+  width: 50%;
+  border-radius: 10px;
+  -webkit-transition: left 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: left 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: left 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: left 100ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.integral-box_content {
+  background: #fff;
+}
+.integral_item {
+  padding:5.5555vw 7.407vw;
+  overflow: hidden;
+}
+.integral_item .total-integral {
+  color:#ff562f;
+  font-size: 3.7037vw;
+}
+.integral_item .usable-integral {
+  text-align: center;
+  color: #464646;
+  font-size: 4.25925vw;
+  margin:5vw auto;
+}
+.integral_item .integral {
+  text-align: center;
+  color:#f7b70b;
+  font-size: 12.96296vw;
+}
+.integral_item .integral-more {
+  text-align: center;
+  color:#ff4317;
+  font-size: 3.33333vw;
+}
+.integral_item .transfer,.integral_item .withdraw {
+  width:45%;
+  background:#bdd90a;
+  color:#fff;
+  margin-top:10vw;
+  height:12vw;
+  line-height: 12vw;
+  font-size:4vw;
+  border:none;
+}
+.integral_item .transfer {
+  float:left;
+}
+.integral_item .withdraw {
+  float:right;
+}

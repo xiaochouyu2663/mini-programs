@@ -1,0 +1,19 @@
+<!--密码管理-->
+<view class="">
+  <view class="input-group">
+     <image class="ico" src="/static/icon_mobile.jpg"></image> 
+    <text>修改登录密码</text>
+  </view>
+  <view class="input-group">
+     <image class="ico" src="/static/icon_mobile.jpg"></image> 
+    <text>找回登录密码</text>
+  </view>
+  <view class="input-group">
+     <image class="ico" src="/static/icon_pay.jpg" ></image> 
+    <text>修改支付密码</text>
+  </view>
+  <view class="input-group">
+     <image class="ico" src="/static/icon_pay.jpg"></image> 
+    <text>找回支付密码</text>
+  </view>
+</view>

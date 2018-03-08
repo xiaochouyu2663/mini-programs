@@ -43,12 +43,12 @@
   </view>
 </view>
 <view class="list_block">
-  <navigator class="order_top-main">
+  <navigator hover-class="none" url="/pages/integral/my-integral" class="order_top-main">
       <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon01.jpg"></image>
       <text>我的积分</text>
       <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
     </navigator>
-    <navigator url="/pages/member-center/mypartner" class="order_top-main">
+    <navigator hover-class="none" url="/pages/member-center/mypartner" class="order_top-main">
       <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon02.jpg"></image>
       <text>我的合作伙伴</text>
       <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
@@ -58,14 +58,14 @@
       <text>账户管理</text>
       <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
     </navigator>
-    <navigator class="order_top-main">
+    <navigator hover-class="none" class="order_top-main">
       <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon04.jpg"></image>
       <text>关于我们</text>
       <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>
     </navigator>
 </view>
 <view class="list_block">
-  <navigator class="order_top-main">
+  <navigator hover-class="none" class="order_top-main">
       <image mode="widthFix" style="width:6vw;margin-top:1.8vh;float:left;margin-right:2vw;" src="/static/icon07.jpg"></image>
       <text>退出</text>
       <image mode="widthFix" style="width:2vw;float:right;margin-top:3.8vw;margin-right:5vw" src="/static/icon_viewdetial.png"></image>

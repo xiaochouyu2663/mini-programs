@@ -1,0 +1,25 @@
+<!--我的积分-->
+<view class="integral-box">
+  <view class="integral-box_top">
+    <view class="nav-item">消费积分</view>
+    <view class="nav-item">提现积分</view>
+    <view class="nav-pagination"></view>
+  </view>
+  <view class="integral-box_content">
+    <view class="integral_item">
+      <view class="total-integral">积分总额  385.00</view>
+      <view class="usable-integral">可用积分</view>
+      <view class="integral">256.00</view>
+      <view class="integral-more">查看明细</view>
+      <button class="primary-btn">使 用</button> 
+    </view>
+    <view class="integral_item">
+      <view class="total-integral">积分总额  385.00</view>
+      <view class="usable-integral">可用积分</view>
+      <view class="integral">256.00</view>
+      <view class="integral-more">查看明细</view>
+      <button class="transfer">积分转账</button> 
+      <button class="withdraw">提 现</button>
+    </view>
+  </view>
+</view>

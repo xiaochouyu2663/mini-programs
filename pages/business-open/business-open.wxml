@@ -1,0 +1,20 @@
+<!--微商开通-->
+<view>
+  <view class="input-group">
+    <label>真实姓名：</label>
+    <input value="是是是" ></input>
+  </view>
+  <view class="input-group">
+    <label>手机号码：</label>
+    <input value="15894769888" ></input>
+  </view>
+  <view class="input-group">
+    <label>身份证号：</label>
+    <input value="15894769888121311313" ></input>
+  </view>
+  <view class="input-group">
+    <label style="width:26vw;">上传营业执照：</label>
+    <image src="/static/upload.jpg" style="width:12vw;height:12vw;margin:3vw 3vw 10vw;"></image>
+  </view>
+  <button class="primary-btn">确认</button>
+</view>

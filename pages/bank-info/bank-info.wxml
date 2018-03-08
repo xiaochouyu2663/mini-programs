@@ -18,15 +18,15 @@
   <view class="input-group">
     <label>开户省份：</label>
     <view style="height:10vw;position:relative;">
-      <picker-view bindchange="bindChange" mask-style=""
-      indicator-style="color:red">
-      <picker-view-column>
-        <view style="line-height: 35px">河北省</view>
-        <view style="line-height: 10.185vw">北京</view>
-      </picker-view-column>
-    </picker-view>
+       <input bindtap="showProvince" wx:if="{{!showProvince}}" placeholder="选择开户省份"
+    placeholder-style="color:#cacaca" value="{{currentPro}}" disabled></input> 
+        <picker-view wx:else bindchange="bindChange" mask-class="mask"
+          indicator-class="indicator">
+          <picker-view-column>
+            <view bindtap="showProvince" wx:for="{{province}}" wx:key="index" style="line-height: 35px;color:#fff;">{{item}}                  </view>
+          </picker-view-column>
+        </picker-view>
     </view>
-    
   </view>
   <view class="input-group">
     <label>开户市份：</label>
@@ -52,4 +52,5 @@
     <input placeholder="银行卡号"
     placeholder-style="color:#cacaca"></input>
   </view>
+  <button class="save" >保存</button>
 </view>

@@ -14,3 +14,42 @@ view{
 img{
     width:100%;
   }
+.input-group {
+  display: -webkit-flex;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  line-height: 12vw;
+  padding: 0 2.77777vw;
+
+}
+.input-group image.ico {
+  width:4.6vw;
+  height:4.6vw;
+  vertical-align: middle;
+  margin-top:3.4vw;
+  margin-right:2vw;
+}
+.input-group:last-child {
+  border-bottom: none;
+}
+.input-group label {
+  width: 18vw;
+}
+.input-group input {
+  line-height: 10.185vw;
+  height: 10.185vw;
+  padding-left: 5px;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+.primary-btn {
+  background:#bdd90a;
+  color:#fff;
+  width:96%;
+  margin-top:10vw;
+  height:12vw;
+  line-height: 12vw;
+  font-size:4vw;
+  border:none;
+}

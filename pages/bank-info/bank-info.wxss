@@ -24,12 +24,28 @@ picker-view {
   position:absolute;
   z-index: 9;
   flex: 1;
-  outline: 1px solid ;
   width: 40vw;
   height: 100px;
   text-align:center; 
-  color:red;
+  box-shadow: 0 0 5px #aaa;
+  background: #434a54;
+  border-radius: 5px;
+}
+.mask {
+  background: #434a54; 
+  z-index: 0; 
+  border-radius: 4px;
 }
 .bank-info {
   margin-top: 1.08vw;
+}
+.save {
+  background:#bdd90a;
+  color:#fff;
+  width:96%;
+  margin-top:10vw;
+  height:12vw;
+  line-height: 12vw;
+  font-size:4vw;
+  border:none;
 }
