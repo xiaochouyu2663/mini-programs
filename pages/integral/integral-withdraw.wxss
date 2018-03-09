@@ -1,0 +1,54 @@
+/* 积分提现 */
+.integral-withdraw {
+  margin: 5.092vw 4.3518vw;
+}
+.integral-withdraw-top {
+  padding:6vw 7.8703vw;
+  background: #f0f0f0;
+  border-radius: 4px 4px 0 0;
+  color: #010101;
+  font-size: 3.7vw;
+}
+.integral-withdraw-content {
+  padding:5vw 7.8703vw;
+  background: #fff;
+  border-radius:0 0 4px 4px;
+}
+.tip {
+  overflow: hidden;
+  margin-bottom: 4vw;
+}
+.tip .lt {
+  float:left;
+  color: #000;
+  font-size: 3.7vw;
+}
+.tip .rt {
+  float:right;
+  color:#a3a3a3;
+  font-size: 3vw;
+  line-height: 4.7vw;
+}
+.tip .rt text {
+  color: #fd6725;
+  font-size: 3.4vw;
+}
+.main {
+  display: flex;
+  display: -webkit-flex;
+  border-bottom: 1px solid #ccc;
+}
+.main text {
+  font-size: 9.259vw;
+  color:#000;
+}
+.main input {
+  font-size: 9.259vw;
+  height: 12vw;
+  flex: 1;
+}
+.desc {
+  margin-top:4vw;
+  font-size:3.4vw;
+  color:#a8a8a8;
+}

@@ -1,0 +1,50 @@
+<!--购物车-->
+<view class="shopcar-settlement">
+  <!--step1  -->
+  <view class="step1">
+    <image class="ico_adress" src="/static/icon_adress.png"></image>
+    <view class="address">
+      Wanghao1858   手机号：13798985267
+    天津市 和平区马鞍山街道12号3单元405室
+    </view>
+    <image class="ico_viewdetial" src="/static/icon_viewdetial.png"></image>
+  </view>
+  <!--step2  -->
+  <view class="step2">
+    <view class="pro_top">
+      <view>已订购商品</view>
+      <view>
+        <image style="width:5vw;height:5vw;" src="/static/icon_edit.png"></image>
+      </view>
+    </view>
+    <view class="pro_list">
+      <view class="pro_list-item">
+          <image class="proimg" style="width:18.518vw;height:18.518vw;" src="/static/user_img.jpg"></image>
+        <view class="promain">
+          <view class="proname">橄榄滋润 绿色消炎 纯天然 手工皂橄榄滋润 绿色消炎 纯天然 手工皂</view>
+          <view>消费积分：12</view>
+        </view>
+        <view class="proprice">
+          $123.00
+        </view>
+        <view class="pronum">x2</view>
+      </view>
+      <view class="pro_list-item">
+          <image class="proimg" style="width:18.518vw;height:18.518vw;" src="/static/user_img.jpg"></image>
+        <view class="promain">
+          <view class="proname">橄榄滋润 绿色消炎 纯天然 手工皂橄榄滋润 绿色消炎 纯天然 手工皂</view>
+          <view>消费积分：12</view>
+        </view>
+        <view class="proprice">
+          $123.00
+        </view>
+        <view class="pronum">x2</view>
+      </view>
+    </view>
+  </view>
+  <view class="step3">
+      <text>买家留言：</text>
+      <input type="text" placeholder='选填'></input>
+  </view>
+</view>
+

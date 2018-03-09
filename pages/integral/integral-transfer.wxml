@@ -1,0 +1,30 @@
+<!--积分转账-->
+<view class="integral-transfer">
+  <view >
+    <view class="tip">
+      <view class="lt">输入转出的积分值</view>
+      <view class="rt">可转账 <text>256.00</text> 积分</view>
+    </view>
+    <view class="integral-group">
+      <image src="/static/ico_integ.png"></image>
+      <input type='text'></input>
+    </view>
+  </view>
+
+  <view >
+    <view class="tip">输入转出的积分值</view>
+    <view class="integral-group">
+      <image src="/static/ico_integ.png"></image>
+      <input type='text'></input>
+    </view>
+  </view>
+
+  <view >
+    <view class="tip">输入转出的积分值</view>
+    <view class="integral-group">
+      <image src="/static/ico_integ.png"></image>
+      <input type='text'></input>
+    </view>
+  </view>
+  <button class="primary-btn">转账</button>
+</view>

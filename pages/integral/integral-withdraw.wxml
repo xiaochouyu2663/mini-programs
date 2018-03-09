@@ -1,0 +1,22 @@
+<!--积分提现-->
+<view  class="integral-withdraw">
+  <view class="integral-withdraw-top">
+    会员账号：ND2564892865254
+  </view>
+  <view class="integral-withdraw-content">
+    <view class="tip">
+      <view class="lt">提现积分</view>
+      <view class="rt">可提现积分 <text>256.00</text></view>
+    </view>
+    <view class="main">
+      <text>￥</text>
+      <input type="text"></input>
+    </view>
+    <view class="desc">
+      提现金额必须为100的倍数，最低提限额为500元。
+提现实际到账金额自动扣除5%的代扣代缴所得税。
+每天只能申请提现一次，单日提现最大限额5万元，提现时间限定为工作日9:30-17:00。
+    </view>
+    <button class="primary-btn">申请提现</button>
+  </view>
+</view>

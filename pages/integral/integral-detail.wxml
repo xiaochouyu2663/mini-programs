@@ -1,0 +1,27 @@
+<!--积分明细-->
+<view class="integral_box">
+  <view class="integral_top">
+    可用积分：<text>356</text>分
+  </view>
+  <view class="integral_list">
+    <block>
+      <view class="integral_list-item">
+        <view class="integral_l">
+            <view class="integral_l-title">购物兑换（订单号：2017126598562）</view>
+            <view class="integral_l-time">2017/12/6  16:01:19</view>  
+        </view>
+        <view class="integral_r">+8020</view>
+      </view>
+    </block>
+    <block>
+      <view class="integral_list-item">
+        <view class="integral_l">
+            <view class="integral_l-title">购物兑换（订单号：2017126598562）</view>
+            <view class="integral_l-time">2017/12/6  16:01:19</view>  
+        </view>
+        <view class="integral_r">+8020</view>
+      </view>
+    </block>
+  </view>
+</view>
+

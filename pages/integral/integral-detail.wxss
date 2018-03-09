@@ -1,0 +1,42 @@
+/*积分明细*/
+.integral_box {
+  padding:0 2.777777vw;
+  background: #fff;
+}
+.integral_top {
+  line-height: 20.833333333vw;
+  color: #ff7247;
+  font-size: 4.07407407vw;
+}
+.integral_top text {
+  font-size: 7.40740740740vw;
+}
+.integral_list-item {
+  border-top: 1px solid #ccc;
+  padding: 4.16666vw 0;
+  overflow: hidden; 
+}
+.integral_list-item .integral_l {
+  float:left;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+}
+.integral_l .integral_l-title {
+  color: #3a3a3a;
+  font-size: 3.528vw;
+}
+.integral_l .integral_l-time {
+  color: #636363;
+  font-size: 3.148vw;
+  line-height: 6vw;
+}
+.integral_list-item .integral_r {
+  max-width: 20vw;
+  float: right;
+  color: #ff5823;
+  font-size: 4.444444vw;
+  padding-right: 2.777777vw;
+  line-height: 10.481vw;
+}

@@ -1,12 +1,16 @@
 {
   "pages":[
-    "pages/integral/my-integral",
+    "pages/shopping-cart/shopcart-settlement",
     "pages/index/index",
     "pages/settlemenmt/settlemenmt",
     "pages/product-detail/product-detail",
     "pages/product-search/product-search",
-    "pages/shopping-cart/shopping-cart",
     
+    "pages/shopping-cart/shopping-cart",
+    "pages/integral/my-integral",
+    "pages/integral/integral-detail",
+    "pages/integral/integral-transfer",
+    "pages/integral/integral-withdraw",
     "pages/member-center/member-center",
     "pages/member-center/mypartner",
     "pages/payment/payment",

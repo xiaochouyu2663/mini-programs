@@ -1,28 +1,26 @@
 /* 购物车 */
-page{
-  background:#ececec;
-}
 .shopcar-header{
-  line-height:10vw;
+  line-height:10.185vw;
   background:#ffffff;
-  padding:0 3vw;
+  padding:0 3.7vw;
   overflow: hidden;
   border-bottom: 1px solid #e7e5ea;
 }
 .shopcar-header .title{
   float: left;
-  font-weight: bold;
+  color: #656565;
+  font-size:3.7vw; 
 }
 .shopcar-header .opt{
   float: right;
+  color: #585858;
 }
 .shopcar-body{
-  margin-top: 3vw;
   background: #ffffff;
 }
 .shopcar-body .goods-item{
   position: relative;
-  padding:2vw 3vw 2vw 12vw;
+  padding:3.7vw 3.7vw 3.7vw 12vw;
   border-bottom:1px solid #e7e5ea;
   height: 20vw;
 }
@@ -30,6 +28,10 @@ page{
   position: absolute;
   top: 50%;
   left: 3vw;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .item-info{

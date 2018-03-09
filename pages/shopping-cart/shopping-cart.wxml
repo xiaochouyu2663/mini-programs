@@ -38,5 +38,5 @@
       <view class="amout-price">总价：{{'234234'}}</view>
       <view>总价：{{'234234'}}</view>
     </view>
-    <button size="mini">结算</button>
+    <button size="mini" class="settlement" bind:tap="toSettlement">结算</button>
 </view>

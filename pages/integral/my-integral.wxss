@@ -24,10 +24,10 @@
   background: #bdd90b;
   width: 50%;
   border-radius: 10px;
-  -webkit-transition: left 100ms cubic-bezier(0.19, 1, 0.22, 1);
-  -moz-transition: left 100ms cubic-bezier(0.19, 1, 0.22, 1);
-  -o-transition: left 100ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: left 100ms cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: left 200ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: left 200ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: left 200ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: left 200ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .integral-box_content {
   background: #fff;

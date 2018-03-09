@@ -24,7 +24,7 @@
   </view>
 </view>
 <view class="product_tab">
-  <view bindtap='selectDetail' class="{{productTab.select?'active':''}}">商品详情</view>
+  <view  bindtap='selectDetail' class="{{productTab.select?'active':''}}" >商品详情</view>
   <view bindtap='selectEvaluate' class="{{productTab.select?'':'active'}} evaluate">
     商品评价
     <span>2</span>

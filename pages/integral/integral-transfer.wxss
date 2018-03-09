@@ -1,0 +1,45 @@
+/* 积分转账 */
+.integral-transfer {
+  margin: 5.092vw 4.3518vw;
+  padding: 7.8703vw;
+  background: #fff;
+  border-radius: 4px;
+}
+.tip {
+  overflow: hidden;
+  margin-bottom: 4vw;
+}
+.tip .lt {
+  float:left;
+  color: #000;
+  font-size: 3.7vw;
+}
+.tip .rt {
+  float:right;
+  color:#a3a3a3;
+  font-size: 3vw;
+  line-height: 4.7vw;
+}
+.tip .rt text {
+  color: #fd6725;
+  font-size: 3.4vw;
+}
+.integral-group {
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 4vw;
+}
+.integral-group image {
+  width: 7.407vw;
+  height: 7.407vw;
+  margin-right: 2vw;
+  margin-top:1.2vw;
+}
+.integral-group input {
+  border: 1px solid #ccc;
+  -webkit-box-flex: 1;
+  flex: 1;
+  background: #f9fcfa;
+  height: 9.25vw;
+  line-height: 9.25vw;
+}

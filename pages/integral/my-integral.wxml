@@ -1,25 +1,29 @@
 <!--我的积分-->
 <view class="integral-box">
   <view class="integral-box_top">
-    <view class="nav-item">消费积分</view>
-    <view class="nav-item">提现积分</view>
-    <view class="nav-pagination"></view>
+    <view bind:tap="consumeIntegral" class="nav-item">消费积分</view>
+    <view bind:tap="withdrawIntegral" class="nav-item">提现积分</view>
+    <view class="nav-pagination" style="left:{{integralTab}}"></view>
   </view>
   <view class="integral-box_content">
-    <view class="integral_item">
+    <view  wx:if="{{currentIntegral=='consume'}}" class="integral_item">
       <view class="total-integral">积分总额  385.00</view>
       <view class="usable-integral">可用积分</view>
       <view class="integral">256.00</view>
-      <view class="integral-more">查看明细</view>
+      <view class="integral-more">
+        <navigator hover-class="none" url="/pages/integral/integral-detail">查看明细</navigator> 
+      </view>
       <button class="primary-btn">使 用</button> 
     </view>
-    <view class="integral_item">
+    <view  wx:else class="integral_item">
       <view class="total-integral">积分总额  385.00</view>
       <view class="usable-integral">可用积分</view>
       <view class="integral">256.00</view>
-      <view class="integral-more">查看明细</view>
-      <button class="transfer">积分转账</button> 
-      <button class="withdraw">提 现</button>
+      <view class="integral-more">
+        <navigator hover-class="none" url="/pages/integral/integral-detail">查看明细</navigator> 
+      </view>
+      <button bind:tap="toTransfer" class="transfer">积分转账</button> 
+      <button bind:tap="toWithdraw" class="withdraw">提 现</button>
     </view>
   </view>
 </view>

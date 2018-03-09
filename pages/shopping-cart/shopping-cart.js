@@ -29,14 +29,6 @@ Page({
    */
   onLoad: function (options) {
     wx.hideTabBar()
-    wx.setNavigationBarTitle({
-      title:'购物车'
-    })
-    wx.setNavigationBarColor({
-      frontColor:'#ffffff',
-      backgroundColor:'#bdd90a'
-    })
-    
   },
 
   /**
@@ -45,57 +37,20 @@ Page({
   onReady: function () {
     wx.getSystemInfo({
       success: function (res) {
-        console.log(res)
+        console.log('系统信息',res)
       }
     })
     
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
   },
   //购物车编辑
   editHandle: function () {
     this.setData({
       editState: !this.data.editState
+    })
+  },
+  toSettlement: function (){
+    wx.navigateTo({
+      url: '/pages/shopping-cart/shopcart-settlement'
     })
   }
 })
