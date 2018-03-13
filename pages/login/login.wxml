@@ -18,7 +18,7 @@
     <navigator url="">
       <text class="forget_pwd">忘记密码</text>
     </navigator>    
-    <navigator url="">
+    <navigator url="/pages/register/register">
       <text class="go_register">注册账号</text>
     </navigator>
   </view>

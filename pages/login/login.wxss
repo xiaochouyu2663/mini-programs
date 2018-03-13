@@ -1,4 +1,7 @@
 /* 登录页面样式 */
+page {
+  background: #fff;
+}
 .logo_box{
   width:140px;
   margin:40px auto;
@@ -13,6 +16,7 @@
   margin:10px auto;
   border:1px solid rgb(190,190,190);
   border-radius: 5px;
+  display: -webkit-flex;
   display:flex;
   padding:5px 10px;
   box-sizing:border-box;
@@ -23,8 +27,8 @@
 .input_group input{
   flex-grow:1;
   margin-left:10px;
-  line-height:45px;
-  height:25px;
+  height:8vw;
+  line-height: 8vw;
   
 }
 .btn-area{

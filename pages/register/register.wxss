@@ -1,0 +1,22 @@
+/* 注册 */
+page {
+   background: #fff; 
+}
+.register-box {
+  padding: 0 3.777777vw;
+  overflow: hidden;
+}
+.register-box_img {
+  display: block;
+  margin: 5.56vw auto;
+  width: 24.07vw;
+  height: 24.07vw;
+}
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 2vw;
+}
+.input-group:last-child {
+  border-bottom: 1px solid #ccc;
+}

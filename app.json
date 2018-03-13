@@ -1,11 +1,11 @@
 {
   "pages":[
-    "pages/shopping-cart/shopcart-settlement",
+    "pages/register/register",
     "pages/index/index",
     "pages/settlemenmt/settlemenmt",
     "pages/product-detail/product-detail",
     "pages/product-search/product-search",
-    
+    "pages/shopping-cart/shopcart-settlement",
     "pages/shopping-cart/shopping-cart",
     "pages/integral/my-integral",
     "pages/integral/integral-detail",
@@ -20,6 +20,7 @@
     "pages/business-open/business-open",
     "pages/bank-info/bank-info",
     "pages/login/login"
+    
   ],
   "window":{
     "navigationBarBackgroundColor": "#bdd90b",

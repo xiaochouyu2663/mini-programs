@@ -11,10 +11,8 @@ Page({
       'indicator-active-color': '#be0000',
       'indicator-dots':true,
       interval:2000,
-      imgUrls: [
-        'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-        'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-        'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      sliders: [
+        
       ]
     },
     advertise:{
@@ -57,10 +55,27 @@ Page({
     banner:{
       src:'/pages/product-detail/product-detail',
       imgUrl:'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'
-    }
+    },
+    
   },
   //页面渲染后执行
   onLoad:function(){
+    var self = this;
+    wx.request({
+      url: app.globalData.URL+'products/indexbanner', 
+      success: function (res) {
+        self.setData({
+          'swiper.sliders':res.data.data.map((item)=>{
+            return {
+              id:item.goodsId,
+              imgUrl: app.globalData.URL +'../../static/'+item.goods_image
+            }
+          })
+        })
+        
+      }
+    });
+
     
   },
   onPullDownRefresh: function(){
