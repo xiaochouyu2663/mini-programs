@@ -20,3 +20,11 @@ page {
 .input-group:last-child {
   border-bottom: 1px solid #ccc;
 }
+.register-opt  {
+  margin-top: 20rpx;
+  line-height: 8vw;
+  font-size: 3.6vw;
+}
+.register-opt switch {
+  transform:scale(.7);
+}

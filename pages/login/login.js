@@ -1,41 +1,9 @@
 var app=getApp()
-// pages/login/login.js
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
     username:'',
     password:''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    wx.getStorageInfo({
-      success:function(res){
-        console.log(res)
-      }
-    })
-    //在当前页面显示导航条加载动画。
-    wx.showNavigationBarLoading()
-    wx.setNavigationBarColor({
-      frontColor: '#ffffff',
-      backgroundColor: '#bdd90a',
-      animation: {
-        duration: 400,
-        timingFunc: 'easeIn'
-      }
-    })
-    wx.setNavigationBarTitle({
-      title: '农哒商城登录',
-      complete:function(){
-        wx.hideNavigationBarLoading()
-      }
-    })
-  },
-  
   //获取用户输入用户名的值
   bindinputUsername:function(e){
     this.setData({
@@ -68,7 +36,7 @@ Page({
       return;
     }
     wx.request({
-      url: app.globalData.URL+'account/login',
+      url: app.globalData.URL+'/account/login',
       method:'GET',
       dataType:'json',
       data:{
@@ -78,34 +46,29 @@ Page({
       success: function (res){
         console.log(res)
         if(res.data.code==200){
-          app.globalData.userInfo.isLogin=true;
-
+          
           wx.showToast({
             title: '登录成功',
             icon: 'none',
-            duration: 2000,
             success:function(){
               wx.setStorageSync('userInfo', res.data.data);
               wx.switchTab({
-                url:'/pages/member-center/member-center'
+                url:'/pages/index/index'
               })
             }
           })
         }else{
           wx.showToast({
             title: res.data.msg,
-            icon: 'none',
-            duration: 2000,
+            icon: 'none'
           })
         }
       },
       fail: function (res){
         wx.showToast({
           title: '请稍后再试',
-          icon: 'none',
-          duration: 2000,
+          icon: 'none'
         })
-        return;
       }
     })
   }

@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/register/register",
+    "pages/member-center/member-center",
     "pages/index/index",
     "pages/settlemenmt/settlemenmt",
     "pages/product-detail/product-detail",
@@ -11,7 +11,7 @@
     "pages/integral/integral-detail",
     "pages/integral/integral-transfer",
     "pages/integral/integral-withdraw",
-    "pages/member-center/member-center",
+    
     "pages/member-center/mypartner",
     "pages/payment/payment",
     "pages/account/account",
@@ -19,6 +19,7 @@
     "pages/add-address/add-address",
     "pages/business-open/business-open",
     "pages/bank-info/bank-info",
+    "pages/register/register",
     "pages/login/login"
     
   ],

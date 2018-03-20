@@ -3,34 +3,34 @@
   <image class="register-box_img" src="/static/login_logo.jpg"></image>
    <view class="input-group">
     <image class="ico" src="/static/icon_pwd.jpg"></image>
-    <input type="text" placeholder="推荐码"></input>
+    <input bindinput="referralCodeInput" type="text" placeholder="推荐码"></input>
   </view>
   <view class="input-group">
     <image class="ico" src="/static/icon_pwd.jpg"></image>
-    <input type="text" placeholder="注册人手机号"></input>
+    <input bindinput="mobileInput" type="number" placeholder="注册人手机号"></input>
   </view> 
   <view class="input-group">
     <image class="ico" src="/static/icon_pwd.jpg"></image>
-    <input type="text" placeholder="真实姓名"></input>
+    <input bindinput="realNameInput" type="text" placeholder="真实姓名"></input>
   </view> 
   <view class="input-group">
     <image class="ico" src="/static/icon_pwd.jpg"></image>
-    <input type="text" placeholder="身份证号"></input>
+    <input bindinput="IDCardInput" type="text" placeholder="身份证号"></input>
   </view> 
   <view class="input-group">
     <image class="ico" src="/static/icon_pwd.jpg"></image>
-    <input type="text" placeholder="登录密码（英文和数字的结合）"></input>
+    <input bindinput="passwordInput" type="text" placeholder="登录密码（英文和数字的结合）"></input>
   </view> 
   <view class="input-group">
     <image class="ico" src="/static/icon_pwd.jpg"></image>
-    <input type="text" placeholder="验证码"></input>
-    <button type="mini" class="verify-btn">获取验证码</button>
+    <input bindinput="verifyCodeInput" type="text" placeholder="验证码"></input>
+    <button type="mini" bind:tap="verifyCodeHandle" class="verify-btn">获取验证码</button>
   </view> 
-  <button style="width: 100%;" class="primary-btn">注册</button>
+  <button style="width: 100%;" bind:tap="register"  disabled="{{!isArgee}}" class="primary-btn">注册</button>
   <view class="register-opt overflow">
     <view class="lt">
-      同意用户协议
+      <switch checked bindchange="isAgreeHandle" type="checkbox" color="#bdd90a"/>同意用户协议
     </view>
-    <navigator class="rt" url="/pages/login/login">返回登录</navigator>
+    <navigator hover-class='none' class="rt" url="/pages/login/login">返回登录</navigator>
   </view>
 </view>
