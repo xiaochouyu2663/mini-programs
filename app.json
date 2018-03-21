@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/payment/payment",
     "pages/member-center/member-center",
     "pages/index/index",
     "pages/settlemenmt/settlemenmt",
@@ -13,7 +14,7 @@
     "pages/integral/integral-withdraw",
     
     "pages/member-center/mypartner",
-    "pages/payment/payment",
+    
     "pages/account/account",
     "pages/pwd-manage/pwd-manage",
     "pages/add-address/add-address",

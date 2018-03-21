@@ -29,3 +29,4 @@
     </view>
   </radio-group> 
 </view>
+<button bind:tap="upload">upload</button>

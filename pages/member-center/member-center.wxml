@@ -1,6 +1,6 @@
 <!--个人中心  -->
 <view class="user_head">
-  <image mode="scaleToFill" class="user_head-bg" src="../../static/user-bg.png"></image>
+  <image  mode="scaleToFill" class="user_head-bg" src="../../static/user-bg.png"></image>
   <view class="userInfo">
     <image mode="aspectFit" class="user_logo" src="{{userInfo.headImg}}"></image>
     <view class="user_msg">
