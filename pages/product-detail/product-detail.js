@@ -1,9 +1,5 @@
-// pages/product-detail/product-detail.js
+const app = getApp()
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     productInfo:{
       id:1231,
@@ -49,7 +45,10 @@ Page({
       visible:false
     }
   },
-
+  onLoad:function(option){
+    // if(option.oid)
+    this.productDetail(101)
+  },
 
   //点击商品详情效果
   selectDetail:function(){
@@ -81,5 +80,24 @@ Page({
         'attrPopup.visible': false
       })
     }
-  }
+  },
+  productDetail: function (oid) {
+    var self = this;
+    wx.request({
+      url: app.globalData.URL + '/api/products/SingleDetail',
+      data:{oid,oid},
+      success: function (res) {
+        console.log(res)
+        self.setData({
+          'productInfo.id':res.data.data.Id,
+          'productInfo.name': res.data.data.ProductName,
+          'productInfo.price': res.data.data.MarketPrice,
+          'productInfo.original': res.data.data.CurrentPrice,
+          'productInfo.sales': res.data.data.Id,
+          'productInfo.imgUrl': app.globalData.URL+'/'+ res.data.data.ImgPath,
+        })
+      }
+    });
+
+  },
 })

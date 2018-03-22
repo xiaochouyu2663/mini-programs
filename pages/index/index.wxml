@@ -13,11 +13,11 @@
      indicator-color="{{swiper['indicator-color']}}" autoplay="{{swiper.autoplay}}"
      interval="{{swiper.interval}}" indicator-active-color="{{swiper['indicator-active-color']}}" circular
     >
-      <block wx:for="{{swiper.sliders}}" wx:key="">
+      <navigator hover-class='none' url="/pages/product-detail/product-detail?oid={{item.id}}" wx:for="{{swiper.sliders}}" wx:key="">
         <swiper-item style="width:100%;">
           <image  mode="{{'widthFix'}}" src="{{item.imgUrl}}" class="slide-image" style="width:100%;display:block;margin:0 auto;"></image>
         </swiper-item>
-      </block>
+      </navigator>
     </swiper>
   </view>
 </view>

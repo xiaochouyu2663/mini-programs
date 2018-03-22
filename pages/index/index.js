@@ -62,17 +62,17 @@ Page({
   onLoad:function(){
     var self = this;
     wx.request({
-      url: app.globalData.URL+'products/indexbanner', 
+      url: app.globalData.URL+'/api/products/banners', 
       success: function (res) {
         self.setData({
           'swiper.sliders':res.data.data.map((item)=>{
             return {
-              id:item.goodsId,
-              imgUrl: app.globalData.URL +'../../static/'+item.goods_image
+              id: item.ProductId,
+              imgUrl: app.globalData.URL + '/' + item.Path
             }
           })
         })
-        
+        // console(self.data.swiper.sliders)
       }
     });
 
